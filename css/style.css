@@ -1,0 +1,23 @@
+/*css reset*/
+/*Universal styles*/
+/*helper classes*/
+/*header and footer*/
+/*module elements ie repeating sections*/
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  border:1px solid green;
+}
