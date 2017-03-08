@@ -15,3 +15,64 @@
 }
 
 img{max-width: 100%}
+
+a{
+  color: inherit;
+}
+
+/*universal styles on total page*/
+body{font-family: 'Ledger', serif;}
+
+header,section,footer{padding:5% 8%}
+
+h1,h2,h4{font-family: 'Dancing Script', cursive;}
+
+h1{font-size:4rem;
+margin-bottom:3%;}
+
+h2{font-size:2.5rem}
+
+h3{font-size:1.5rem;
+text-align:center;}
+
+.centered{text-align: center;}
+
+.featured{background-color:#D2D8B3;}
+
+.dark{background-color:#F7B32B;}
+
+.button{
+  font-weight: 500;
+  background-color:#D2D8B3;
+  border:1px solid black;
+  border-radius: 10px;
+  padding: 2%;
+  display:inline-block;
+  margin:1% 5%;
+}
+
+/*header section*/
+header{
+  background-image:url("../images/paul-talbot-704.jpg");
+  background-size:cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+header p{
+  background-color: rgba(255,255,255,.5);
+  padding:2.5%;
+  border-radius: 10px;
+
+}
+nav{margin-top: 5%;}
+
+/*footer*/
+
+footer .fa {
+  font-size: 2rem;
+  color:#2C4251
+}
+
+
+/**/
