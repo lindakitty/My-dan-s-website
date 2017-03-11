@@ -72,7 +72,7 @@ p {
   text-align: center;
 }
 
-.home-page-banner .banner-content {
+.banner-content {
   background-color: rgba(255,255,255,.5);
   padding: 10%;
   border-radius: 2.5%px;
@@ -80,7 +80,7 @@ p {
 
 .home-page-banner h1{}
 
-.home-page-banner .sub-heading {
+.home-page-banner .sub-heading, .about-banner .sub-heading {
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -92,6 +92,17 @@ nav {
   background-position: center;
   height: 200px;
 }
+
+/*about page*/
+.about-banner{
+  background-image: url("../images/paul-talbot-704.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  text-align: center;
+}
+
+
 
 /*footer*/
 
