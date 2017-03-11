@@ -21,14 +21,15 @@ layout: default
 <!-- closing of the about section -->
       <!--most recent blog posts  -->
       <section class="grid centered" id="blog">
-        <h2 class= "col-12">blog post
+        <h2 class= "col-12">Latest Blog Posts
         </h2>
-        {% for post in site.posts %}
+        {% for post in site.posts limit:3 %}
         <div class="col-4">
-          <img
-          src="https://i.ytimg.com/vi/a6KGPBflhiM/hqdefault.jpg">
+          <div class="blog-preview-image" style="background-image: url('{{ post.image }}')"></div>
           <h3>{{post.title}}</h3>
-          <h4>{{post.date}}</h4>
+          <h4>{{post.date | date_to_string }}</h4>
+          <p>{{post.quote}}</p>
+
           <a href="{{post.url}}" class="button">read more</a>
         </div>
         {% endfor %}

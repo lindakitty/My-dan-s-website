@@ -87,6 +87,12 @@ p {
 nav {
 }
 
+.blog-preview-image {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
 /*footer*/
 
 footer .fa {
@@ -95,4 +101,9 @@ footer .fa {
 }
 
 
-/**/
+/*Blog page*/
+.blog-image {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}

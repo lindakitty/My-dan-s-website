@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<section class="grid centered" id="blog">
+  <h1 class= "col-12">Blog Posts</h1>
+  {% for post in site.posts %}
+  <div class="col-12">
+    <div class="blog-preview-image" style="background-image: url('{{ post.image }}')"></div>
+    <h3>{{post.title}}</h3>
+    <h4>{{post.date | date_to_string }}</h4>
+    <p>{{post.quote}}</p>
+
+    <a href="{{post.url}}" class="button">read more</a>
+  </div>
+  {% endfor %}
+</section>
