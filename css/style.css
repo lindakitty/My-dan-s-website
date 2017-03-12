@@ -113,6 +113,10 @@ footer .fa {
 
 
 /*Blog page*/
+.blog-post p {
+  text-align: center;
+}
+
 .blog-image {
   background-size: cover;
   background-position: center;
