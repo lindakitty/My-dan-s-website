@@ -20,17 +20,20 @@ layout: default
       </section>
 <!-- closing of the about section -->
       <!--most recent blog posts  -->
-      <section class="grid centered" id="blog">
+      <section class="blog-posts-section grid centered" id="blog">
         <h2 class= "col-12">Latest Blog Posts
         </h2>
         {% for post in site.posts limit:3 %}
         <div class="col-4">
-          <div class="blog-preview-image" style="background-image: url('{{ post.image }}')"></div>
-          <h3>{{post.title}}</h3>
-          <h4>{{post.date | date_to_string }}</h4>
-          <p>{{post.quote}}</p>
-
-          <a href="{{post.url}}" class="button">read more</a>
+          <a href="{{post.url}}" class="blog-preview">
+            <div class="blog-preview-image" style="background-image: url('{{ post.image }}')"></div>
+            <div class="blog-preview-content">
+              <h3>{{post.title}}</h3>
+              <p class="date">{{post.date | date_to_string }}</p>
+              <p>{{post.quote}}</p>
+              <div class="button">read more</div>
+            </div>
+          </a>
         </div>
         {% endfor %}
         <!-- end of blog posts -->

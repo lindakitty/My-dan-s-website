@@ -16,17 +16,27 @@
   <body>
     <header class="centered">
       <nav>
-        <a href="/" class="button">home</a>
-        <a href="/about" class="button">about me</a>
-        <a href="/blog" class="button">blog</a>
-        <a class="button" href = "contact.html">contact</a>
+        <a href="/">home</a>
+        <a href="/about">about me</a>
+        <a href="/blog">blog</a>
+        <a href="contact.html">contact</a>
       </nav>
     </header>
-      <section>
-<h3>Linda McMullen
-</h3>
-<h4>akakitty@bigpond.com
-</h4>
+      <section class="contact-section grid">
+  <div class="col-12">
+    <h1>Get in Touch</h1>
+  </div>
+  <div class="col-3"></div>
+  <div class="col-6">
+    <form method="POST" action="http://formspree.io/akakitty@bigpond.com">
+      <input type="name" name="text" placeholder="Your name" required>
+      <input type="tel" name="tel" placeholder="Your telephone number">
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+
+    </form>
+  </div>
 </section>
 
     <footer class="dark">

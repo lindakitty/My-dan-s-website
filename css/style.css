@@ -57,15 +57,37 @@ p {
   font-weight: 500;
   background-color:#D2D8B3;
   border:1px solid black;
-  border-radius: 10px;
-  padding: 2%;
+  border-radius: 5px;
+  padding: 3% 10%;
   display:inline-block;
-  margin:1% 5%;
+  margin:3% 5%;
+}
+
+input, textarea {
+  font-size: 1.5rem;
+  border: 1px solid #D2D8B3;
+  line-height: 1.5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0px;
+  width: 100%;
+}
+
+button {
+  font-weight: 500;
+  background-color:#D2D8B3;
+  width: 100%;
+  font-size: 1.5rem;
+  border:1px solid black;
+  border-radius: 5px;
+  padding: 3% 10%;
+  margin: 10px 0px;
+  display:inline-block;
 }
 
 /*header section*/
 .home-page-banner {
-  background-image:url("../images/paul-talbot-704.jpg");
+  background-image:url("/images/banner.jpg");
   background-size:cover;
   background-position: center;
   min-height: 60vh;
@@ -87,10 +109,41 @@ p {
 nav {
 }
 
+nav a {
+    color: #92967e;
+    font-weight: 500;
+    display:inline-block;
+    padding:2% 5%;
+}
+
+nav a:hover {
+  background-color: #f3f3f3;
+}
+.blog-posts-section .col-4 {
+
+}
+
+.blog-preview {
+  border: 1px solid #D2D8B3;
+  padding: 0px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
 .blog-preview-image {
   background-size: cover;
   background-position: center;
   height: 200px;
+}
+
+.blog-preview .date {
+  font-size: 1.0rem;
+  color: grey;
+}
+
+.blog-preview-content {
+  padding: 5px;
 }
 
 /*about page*/
@@ -98,10 +151,22 @@ nav {
   background-image: url("../images/paul-talbot-704.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  min-height: 60vh;
   text-align: center;
 }
 
+.about-content {
+  text-align: center;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+}
+
+/* Contact Page */
+.contact-section h1 {
+  text-align: center;
+}
 
 
 /*footer*/
